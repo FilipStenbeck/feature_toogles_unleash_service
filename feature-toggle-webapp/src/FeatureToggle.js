@@ -9,7 +9,7 @@ const Button = ({ name, children }) => {
 
   useEffect(() => {
     async function getToggles() {
-      const result = await axios('http://detectify.local:3000/features');
+      const result = await axios('http://localhost:3000/features');
       const data = result.data.toggles;
 
       setToggle(isEnabled(name, data));
