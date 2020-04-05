@@ -21,6 +21,7 @@ const FeatureToggle = ({ name, children }) => {
     }
     getToggles();
   }, [name]);
+
   return <>{toggle ? children : ''}</>;
 };
 
