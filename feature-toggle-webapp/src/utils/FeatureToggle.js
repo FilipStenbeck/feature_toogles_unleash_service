@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Button = ({ name, children }) => {
+export const ACTIVE_TOGGLES = {
+  FEATURE_NEW_TEXT: 'FEATURE_NEW_TEXT',
+  FEATURE_NEW_BUTTON: 'FEATURE_NEW_BUTTON',
+};
+
+const FeatureToggle = ({ name, children }) => {
   const [toggle, setToggle] = useState(false);
 
   const isEnabled = (name, toggles) =>
@@ -19,4 +24,4 @@ const Button = ({ name, children }) => {
   return <>{toggle ? children : ''}</>;
 };
 
-export default Button;
+export default FeatureToggle;

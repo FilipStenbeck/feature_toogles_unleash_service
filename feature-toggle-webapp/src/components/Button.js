@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
+import './Button.css';
 
 const Button = ({ children }) => (
   <div className="button_cont" align="center">
-    <a className="example_a" href="/#">
+    <a className="cool_button" href="/#">
       {children}
     </a>
   </div>
